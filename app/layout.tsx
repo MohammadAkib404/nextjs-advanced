@@ -25,7 +25,7 @@ type CP = {
 export default function RootLayout({ children }: CP) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex">{children}</body>
+      <body className="min-h-full flex bg-[#333c4d]">{children}</body>
     </html>
   );
 }
