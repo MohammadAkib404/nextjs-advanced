@@ -20,18 +20,12 @@ export const metadata: Metadata = {
 
 type CP = {
   children: ReactNode;
-  members: ReactNode;
-  comments: ReactNode;
 };
 
-export default function RootLayout({ children, members, comments }: CP) {
+export default function RootLayout({ children }: CP) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex">
-        {children}
-        {members}
-        {comments}
-      </body>
+      <body className="min-h-full flex">{children}</body>
     </html>
   );
 }
